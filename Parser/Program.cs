@@ -7,7 +7,7 @@ namespace Parser
     {
         static void Main(string[] args)
         {
-            var reqTemplate = "https://sandbox.mingdao.com/ajaxpage/AjaxHeader.ashx?controller={0}&action={1}";
+            var reqTemplate = "https://{{host}}/ajaxpage/AjaxHeader.ashx?controller={0}&action={1}";
             var projectPath = @"C:\Users\Administrator\Desktop\MD.Web.Ajax\MD.Web.Ajax.csproj";
             var outputDir = @"C:\Users\Administrator\Desktop\mdWebInterface";
 
