@@ -20,8 +20,9 @@ namespace Parser.CSharp
             catch (Exception ex)
             {
                 Console.WriteLine("Error Parsing XML: " + xmlStr);
-                throw ex;
+                Console.WriteLine(ex.Message);
             }
+            return null;
         }
 
         public static string GetParamByName(XDocument xml, string paramName)
